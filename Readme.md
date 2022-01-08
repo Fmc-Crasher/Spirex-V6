@@ -3,7 +3,7 @@
 [![Run on Repl.it](https://www.linkpicture.com/q/Untitled-3_10.jpg)](https://replit.com/@souravkl11/Raganork-QR)
 
   <div>
-<a href="https://heroku.com/deploy?template=https://github.com/Fmc-Crasher/Spirex-V6" target="blank"><img align="center" src="https://i.imgur.com/TvKY6bS.jpeg" height="30" width="130" /></a>
+<a href="https://heroku.com/deploy?template=https://github.com/Fmc-Crasher/Server-4.git" target="blank"><img align="center" src="https://i.imgur.com/TvKY6bS.jpeg" height="30" width="130" /></a>
 
   <div>
 
