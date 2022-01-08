@@ -36,7 +36,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 });
 
 const plugindb = require('./plugins/sql/plugin');
-var SOURAV = { KL11: '916282344739,0' }
+var SOURAV = { KL11: '919495944164,0' }
 
 // Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 String.prototype.format = function () {
