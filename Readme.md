@@ -15,4 +15,4 @@
 
 <div>
   
-<a href="https://bit.ly/Raganork"><img src="https://www.linkpicture.com/q/LPic61d2ff4fe761e1108933519.png" alt="Join our group" height="80" width="150" border="0"></a>
+<a href="Its Private"><img src="https://www.linkpicture.com/q/LPic61d2ff4fe761e1108933519.png" alt="Join our group" height="80" width="150" border="0"></a>
