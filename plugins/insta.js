@@ -13,7 +13,7 @@ const s = require('../config');
 const v = s.CHANNEL
 const need = "_Need instagram link!_";
 const need_acc = "_Need an instagram username!_";
-const fail = "*_Download failed! Check your link and try again_*";
+const fail = "*Download failed! Check your link and try again*";
 const need_acc_s = "_Need username or link!_";
 let sourav = setting.WORKTYPE == 'public' ? false : true
 skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
@@ -33,8 +33,8 @@ var q = 'https://instagram.com' + souravkl11[1]
 var res = await raganork.query.getPost(q,v )
 var buffer = await raganork.query.skbuffer(res.links[0].url)
 if (!res) return await msg.client.sendMessage(msg.jid, fail, MessageType.text, {quoted: msg.data});
-if (res.links[0].url.includes('mp4')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.video, { mimetype: Mimetype.mp4, caption: '_Caption:_ ' + `${res.caption}` + '\n\n _Username:_ *' + `${res.username}` + '*\n _Name:_ *' + `${res.name}` + '*\n _Likes:_ *' + `${res.likes}` + '*\n _Comments:_ *' + `${res.comment_count}` + '*', quoted: msg.data});
-if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '_Caption:_ ' + `${res.caption}` + '\n\n _Username:_ *' + `${res.username}` + '*\n _Name:_ *' + `${res.name}` + '*\n _Likes:_ *' + `${res.likes}` + '*\n _Comments:_ *' + `${res.comment_count}` + '*', quoted: msg.data});
+if (res.links[0].url.includes('mp4')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.video, { mimetype: Mimetype.mp4,caption: '*ɪɴѕᴛᴀ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*' + '\n\n  𝗧𝗜𝗧𝗟𝗘:' + `${res.caption}` + '\n\n 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘: ' + `${res.username}` + , quoted: msg.data});
+if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '*ɪɴѕᴛᴀ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*' + '\n\n  𝗧𝗜𝗧𝗟𝗘:' + `${res.caption}` + '\n\n 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘: ' + `${res.username}` + , quoted: msg.data});
 }
 else return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
 }));
