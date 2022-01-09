@@ -6,7 +6,7 @@ const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({token: config.HEROKU.API_KEY});
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
-New.addCommand({ pattern: 'setlogo ?(.*)', fromMe: true}, (async (message, match) => {
+New.addCommand({ pattern: 'logo ?(.*)', fromMe: true}, (async (message, match) => {
         if (match[1] == '') {return await message.sendMessage('_Need an image link!_')}
          if (match[1].includes('jpeg') || match[1].includes('raganork')) {
 var newimg = await axios.get(match[1], { responseType: 'arraybuffer' })
