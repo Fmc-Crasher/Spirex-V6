@@ -8,7 +8,7 @@
             "COMMAND": "Command",
             "DESC": "Description",
             "EXAMPLE": "Example",
-            "NOT_FOUND": "*I couldnt find a command like this*",
+            "NOT_FOUND": "*ᴛʜᴇʀᴇ ɪs ɴᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪᴋᴇ ᴛʜɪs*",
             "WARN": "Warn"
         },
         "_plugin": {
@@ -16,14 +16,14 @@
             "NEED_URL": "Please enter a URL! Example:",
             "INVALID_URL": "_Please enter a valid url!_",
             "INVALID_PLUGIN": "*Plugin has errors!*\n*Error:*",
-            "INSTALLED": "*✅ Plugin installed successfully!*",
+            "INSTALLED": "*ᴘʟᴜɢɪɴ ɪɴsᴛᴀʟʟ ᴀᴀʏɪ ʙʀᴏ*",
             "PLUGIN_DESC": "Shows the plugins you have installed.",
             "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
             "NO_PLUGIN": "*You have not installed any external plugins!*",
             "REMOVE_DESC": "Removes the plugin.",
             "NEED_PLUGIN": "_Please enter a Plugin! Example: .plugin __test_",
             "NOT_FOUND_PLUGIN": "_Maybe you have installed such a plugin, or maybe not. But it sure isn't right now._",
-            "DELETED": "*✅ Module successfully deleted!*"
+            "DELETED": "*ᴘʟᴜɢɪɴ ᴅᴇʟᴇᴛᴇ ᴀᴀʏɪ ʙʀᴏ*"
         },
         "admin": {
             "BAN_DESC": "Remove someone from the group. Reply to message or tag a person to use command.",
@@ -164,9 +164,9 @@
         },
         "removebg": {
             "REMOVEBG_DESC": "Removes the background of the photos.",
-            "NEED_PHOTO": "*photo thaa mwonu!*",
-            "NO_API_KEY": "*You have no API key*\n_remove.bg login for apikey_",
-            "RBGING": "_Processing..._"
+            "NEED_PHOTO": "*ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ʙʀᴏ*",
+            "NO_API_KEY": "ᴀʙʀᴜ sɪʀ ɪɴᴏᴅᴇ ᴀᴘɪ ᴋᴇʏ ᴠᴇᴋᴋᴀɴ ᴘᴀʀᴀ ʙʀᴏ",
+            "RBGING": "ʀᴇᴍᴏᴠɪɴɢ ʙᴀᴄᴋɢʀᴏᴜɴᴅ 🧭"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
@@ -201,8 +201,8 @@
         },
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
-            "NEED_REPLY": "_Reply to a photo or short video_",
-            "DOWNLOADING": "_Please wait..._"
+            "NEED_REPLY": "ᴠʀᴏ ʀᴇᴘʟʏ ᴛᴏ ᴘʜᴏᴛᴏ ᴏʀ ѕʜᴏʀᴛ ᴠɪᴅᴇᴏ",
+            "DOWNLOADING": "ᴄᴏɴᴠᴇʀᴛɪɴɢ 🧭"
         },
         "system_stats": {
             "ALIVE_DESC": "Checks if the bot is working or not",
@@ -210,18 +210,18 @@
         },
         "tagall": {
             "TAGALL_DESC": "Tags everyone in the group.",
-            "ADMİN": "_I am not admin in this group!_"
+            "ADMİN": "ʙᴏѕѕ ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ"
         },
         "updater": {
             "UPDATER_DESC": "Checks if your bot has updates.",
-            "UPDATE": "_This is already the latest version_",
+            "UPDATE": "ʜᴇͧʀᷤᴍͤɪͬ† ⚚ ᴘɪⷡᴋⷪᴀⷮᴄᷤʜᴜ ɪs ᴜᴘᴛᴏ ᴅᴀᴛᴇ",
             "NEW_UPDATE": "\n",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "_Build started_",
-            "INVALID_HEROKU": "_Your Heroku information is wrong_",
-            "UPDATED": "_Build finished_",
+            "UPDATING": "ᴜᴘᴅᴀᴛɪɴɢ 🧭",
+            "INVALID_HEROKU": "ᴡʀᴏɴɢ ʜᴇʀᴜᴋᴏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ",
+            "UPDATED": "ᴜᴘᴅᴀᴛᴇᴅ 📿",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "_Restarting_"
+            "AFTER_UPDATE": "ʜᴇͧʀᷤᴍͤɪͬ† ⚚ ᴘɪⷡᴋⷪᴀⷮᴄᷤʜᴜ ʀᴇѕᴛᴀʀᴛɪɴɢ"
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
@@ -276,7 +276,7 @@
             "TITLE": "Title",
             "PUBLICATION": "Publication",
             "SONGL": "Link",
-            "NEED_SONG": "_Type your song name_.",
+            "NEED_SONG": " ɴᴇᴇᴅ ᴀ sᴏɴɢ ɴᴀᴍᴇ ",
             "NOT_FOUNDS" : "No such songs found!",
             "JOOX_DESC": "Brings you the song details and a link for it.",
             "LYRICS_DESC": "Brings you the song Lyrics.",
@@ -473,7 +473,7 @@
             "SUCCESSFULLY_DELETED": "Successfully deleted all your notes."
         },
         "instagram": {
-            "NEED_WORD": "*Please enter username of any instagram account.*",
+            "NEED_WORD": "ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴀ ᴘᴜʙʟɪᴄ ᴀᴄᴄ ʟɪɴᴋ",
             "USAGE": ".insta <userName>",
             "DESC": "Fetches user informations from instagram",
             "LOADING": "Fetching user data.. please wait.",
