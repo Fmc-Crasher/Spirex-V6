@@ -1,8 +1,8 @@
-𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐇𝐄𝐑𝐌𝐈𝐓-𝐕𝟔  𝐁𝐘  𝐌𝐀²𝐃 〄
+𝐇𝐄𝐑𝐌𝐈𝐓-𝐕𝟔  𝐁𝐘  𝐌𝐀²𝐃 〄
 
 <div align="center">
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=0000FF&lines=WELCOME+TO+SPIREX+V3+BOT+RESPO.;CREATED+BY+𝐌𝐀²𝐃+〄;ITS+AN+𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋+𝐁𝐎𝐓+;NOT+A+SPAMMING+BOT+😌;𝐓𝐇𝐀𝐍𝐊𝐒+💖+FOR+VISITING+OUR+𝐆𝐈𝐓)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=0000FF&lines=WELCOME+TO+HERMIT+V6+BOT+RESPO.;CREATED+BY+𝐌𝐀²𝐃+〄;ITS+AN+𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋+𝐁𝐎𝐓+;NOT+A+SPAMMING+BOT+😌;𝐓𝐇𝐀𝐍𝐊𝐒+💖+FOR+VISITING+OUR+𝐆𝐈𝐓)](https://git.io/typing-svg)
 
  </a>
 </p>
