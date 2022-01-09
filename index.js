@@ -10,7 +10,6 @@ const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require(
 const {Message, StringSession, Image, Video} = require('./Raganork/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
-const simpleGit = require('simple-git');
 const axios = require('axios');
 const got = require('got');
 const Language = require('./language');
