@@ -21,7 +21,7 @@ var newimg = await axios.get(match[1], { responseType: 'arraybuffer' })
         else return await message.sendMessage('_Image link invalid_ ❌ \n _Use command *.url* to get image link!_')
         }));
 
-New.addCommand({ pattern: 'mreply ?(.*)', fromMe: true}, (async (message, match) => {
+New.addCommand({ pattern: 'mention ?(.*)', fromMe: true}, (async (message, match) => {
         
         if (!match[1]) {
           return await message.sendMessage('Need a response! \n .mreply on \n or \n .mreply Message')
