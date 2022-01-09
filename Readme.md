@@ -1,4 +1,4 @@
-𝐇𝐄𝐑𝐌𝐈𝐓-𝐕𝟔  𝐁𝐘  𝐌𝐀²𝐃 〄
+ᴄͥʀͭᴀᷤѕʜᷟᴇͤʀ 〄
 
 <div align="center">
 
@@ -37,7 +37,8 @@ TAP THE ICON AND JOIN ʜᴇͧʀᷤᴍͤɪͬ† ⚚ ᴘɪⷡᴋⷪᴀⷮᴄᷤʜ�
 <div align="center"> 
 
 
-## TAP YT LOGO TO FIND PASSWORD
+## HOW TO MAKE OUR OWN BOT
+
 
  [![ANY DOUBT REFER IT](https://www.linkpicture.com/q/YouTube-Logo-700x394.png)](https://youtu.be/EyfVigi2GUw)
 
