@@ -51,13 +51,13 @@
         },
         "afk": {
             "AFK_DESC": "It makes you AFK - Away From Keyboard.",
-            "IM_AFK": "*I'm AFK now!*",
+            "IM_AFK": "*ᴀғᴋ ᴀᴄᴛɪᴠᴀᴛᴇᴅ*",
             "IM_AFK_NOMD": "I'm AFK now!",
             "REASON": "Reason",
             "LAST_SEEN": "Last Seen",
-            "IM_NOT_AFK": "_I am not AFK anymore!_",
-            "AFK_TEXT": "_My owner is not here at the moment._",
-            "AFK_TEXT_NOMD": "I am bot!",
+            "IM_NOT_AFK": "ᴀғᴋ ᴅɪsᴀʙʟᴇᴅ",
+            "AFK_TEXT": "ᴡᴀɪᴛ ғᴏʀ ʀᴇᴘʟʏ",
+            "AFK_TEXT_NOMD": "ɪ ᴀᴍ ɴᴏᴛ ᴀ ʙᴏᴛ ɪ'ᴍ ʜᴇʀᴍɪᴛ",
             "HOUR": "hour",
             "MINUTE": "minute",
             "SECOND": "second"
@@ -214,14 +214,14 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks if your bot has updates.",
-            "UPDATE": "ʜᴇͧʀᷤᴍͤɪͬ† ⚚ ᴘɪⷡᴋⷪᴀⷮᴄᷤʜᴜ ɪs ᴜᴘᴛᴏ ᴅᴀᴛᴇ",
+            "UPDATE": "ʜᴇʀᴍɪᴛ ɪs ᴜᴘᴛᴏ ᴅᴀᴛᴇ",
             "NEW_UPDATE": "\n",
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "ᴜᴘᴅᴀᴛɪɴɢ 🧭",
             "INVALID_HEROKU": "ᴡʀᴏɴɢ ʜᴇʀᴜᴋᴏ ɪɴғᴏʀᴍᴀᴛɪᴏɴ",
             "UPDATED": "ᴜᴘᴅᴀᴛᴇᴅ 📿",
             "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "ʜᴇͧʀᷤᴍͤɪͬ† ⚚ ᴘɪⷡᴋⷪᴀⷮᴄᷤʜᴜ ʀᴇѕᴛᴀʀᴛɪɴɢ"
+            "AFTER_UPDATE": " ʜᴇʀᴍɪᴛ ʀᴇѕᴛᴀʀᴛɪɴɢ"
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
