@@ -9,12 +9,12 @@ var q = await m.client.downloadAndSaveMediaMessage({key: { remoteJid: m.reply_me
 var k = c.ZEKAIS_API
 var r = await f.query.music(q,k,v)
 if (r.result) {
-let msg =  '_Title:_ *' + r.result.title + '* \n_Album:_ *' + r.result.album+'* \n_Artist:_ *' + r.result.artist+ '* \n_Label:_ *' + r.result.label+'* \n_Release date:_ *' + r.result.release_date + '* \n_Song link:_ ' + 'https://www.youtube.com/results?search_query='+r.result.title.split(' ').join('+')
+let msg =  'ᴛɪᴛʟᴇ:*' + r.result.title + '* \nᴀʟʙᴜᴍ:*' + r.result.album+'* \nᴀʀᴛɪѕᴛ:*' + r.result.artist+ '* \nʟᴀʙᴇʟ:*' + r.result.label+'* \nʀᴇʟᴇѕᴇ ᴅᴀᴛᴇ:*' + r.result.release_date + '* \nЅᴏɴɢ ʟɪɴᴋ: ' + 'https://www.youtube.com/results?search_query='+r.result.title.split(' ').join('+')
 return await m.client.sendMessage(m.jid, msg, MessageType.text, {quoted: m.data})}
 if (r.error) return await m.client.sendMessage(m.jid, "_Error " + r.error.error_code + '_', MessageType.text,{quoted: m.data})
-if (!r.result) return await m.client.sendMessage(m.jid, "_Failed!_", MessageType.text,{quoted: m.data})}
+if (!r.result) return await m.client.sendMessage(m.jid, "ғᴀɪʟᴇᴅ", MessageType.text,{quoted: m.data})}
 else {return await m.client.sendMessage(m.jid, "_Reply to any music!_", MessageType.text,{quoted: m.data})}}));
 if (c.WORKTYPE === 'public') {
 e.addCommand({pattern: 'find ?(.*)', fromMe: false}, (async (m, match) => {    
-return await m.client.sendMessage(m.jid, "_Only the owner can use this command!_", MessageType.text,{quoted: m.data})
+return await m.client.sendMessage(m.jid, "*ᴏɴʟʏ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜѕᴇ ᴛʜɪs ғᴇᴀᴛᴜʀᴇ*", MessageType.text,{quoted: m.data})
 }));}
