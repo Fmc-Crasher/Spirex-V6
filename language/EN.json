@@ -187,7 +187,7 @@
             "DOWNLOADING_SONG": "\n*Searching song...*\n",
             "UPLOADING_SONG": "\n*Uploading 📲 Use 🎧*\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*ᴀғᴛᴇʀ ᴛʏᴘɪɴɢ .ᴠɪᴅᴇᴏ ᴛʏᴘᴇ (ᴠɪᴅᴇᴏ ɴᴀᴍᴇ) ᴏʀ (ʏᴛ ʟɪɴᴋ)*\ɴ*ᴇxᴀᴍᴘʟᴇ:* .video https://youtu.be/EyfVigi2GUw",
+            "NEED_VIDEO": "*ᴀғᴛᴇʀ ᴛʏᴘɪɴɢ .ᴠɪᴅᴇᴏ ᴛʏᴘᴇ (ᴠɪᴅᴇᴏ ɴᴀᴍᴇ) ᴏʀ (ʏᴛ ʟɪɴᴋ)*\n*ᴇxᴀᴍᴘʟᴇ:* .video https://youtu.be/EyfVigi2GUw",
             "DOWNLOADING_VIDEO": "ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ 📿",
             "UPLOADING_VIDEO": "ᴜᴘʟᴏᴀᴅɪɴɢ 📿",
             "YT_DESC": "It searchs on YouTube.",
