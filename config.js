@@ -73,6 +73,7 @@ module.exports = {
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     YAK: process.env.YAK === undefined ? '919074309534' : process.env.YAK,
+    sourav_g_link: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/KwstIqsJBbE0s7xGcAD7P2' : process.env.GROUP_LINK,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
@@ -83,11 +84,11 @@ module.exports = {
     DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
-    SUDO: process.env.SUDO === undefined ? '919495944164,0' : process.env.SUDO,
+    SUDO: process.env.SUDO === undefined ? '919074309534,0' : process.env.SUDO,
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
     ZEKAIS_API: "d2a8e1cf665bfddfffdcb530694fdde7",
-    SUPPORT2: "918590699087",
-    SUPPORT3: "918281657461"
+    SUPPORT2: "916282344739",
+    SUPPORT3: "919074309534"
 };
