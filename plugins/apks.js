@@ -268,7 +268,7 @@ Asena.addCommand({pattern: 'capcut', fromMe: false, dontAddCommandList: true}, (
    }));
 
    Asena.addCommand({pattern: 'git', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-      await message.sendMessage('*ʜᴇʀᴍɪ† 𖤍* \n📿 https://github.com/Fmc-Crasher/Spirex-V6');
+      await message.sendMessage('📿 *ʜᴇʀᴍɪ† 𖤍* \n📿 https://github.com/Fmc-Crasher/itsmecrasher');
    }));
 
    Asena.addCommand({pattern: 'callr', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
