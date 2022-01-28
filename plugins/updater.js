@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-Asena.addCommand({pattern: 'update$', fromMe: true, dontAddCommandList: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'update $', fromMe: true, dontAddCommandList: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -32,13 +32,13 @@ Asena.addCommand({pattern: 'update$', fromMe: true, dontAddCommandList: true, de
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '*(' + commit.date.substring(0, 10) + ')* : ' + commit.message + '\n';
+                degisiklikler += '(' + commit.date.substring(0, 10) + ') : *' + commit.message.replace('Update','Fixed').replace('.js','') + '*\n';
             }
         );
         
         await message.client.sendMessage(
             message.jid,
-            degisiklikler + '```', MessageType.text
+            degisiklikler, MessageType.text
         ); 
     }
 }));
