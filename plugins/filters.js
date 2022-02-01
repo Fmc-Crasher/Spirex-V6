@@ -148,7 +148,7 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.AUTOSTICKER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-const array = ['Ayin','ban','hermit','Da','Hi','warn','Warn','bot','Bot','Hermit','alive']
+const array = ['Ayin','ban','hermit','Da','Hi','warn','Warn','Bot','Hermit','alive']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
