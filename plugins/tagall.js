@@ -35,7 +35,7 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: tru
             mesaj = '';
             grup['participants'].map(
                 async (uye) => {
-                    mesaj += '\n ♥ @' + uye.id.split('@')[0] + 'ㅤ🚨';
+                    mesaj += '\n 📿 @' + uye.id.split('@')[0] + 'ㅤ👀';
                     jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
                 }
             );
@@ -52,7 +52,7 @@ Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: tru
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
             }
         );
-        var tx = message.reply_message.text
-        await message.client.sendMessage(message.jid,tx, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        var tx = message.reply_message.message
+        await message.client.sendMessage(message.jid,tx, MessageType.text, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
 }));
