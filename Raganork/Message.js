@@ -20,12 +20,12 @@ class Message extends Base {
         this.id = data.key.id === undefined ? undefined : data.key.id;
         this.jid = data.key.remoteJid;
         this.fromMe = data.key.fromMe;
-        this.message = data.message && !data.message.extendedTextMessage ? data.message.conversation : data.message.extendedTextMessage.text;
+        this.message = data && data.message && data.message.extendedTextMessage ?  data.message.extendedTextMessage.text : /*data.message.conversation*/ '';
         this.unreadCount = data.unreadCount;
         this.timestamp = typeof(data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
         this.data = data;
         
-        if (data.message != false && data.message.hasOwnProperty('extendedTextMessage') &&
+        if (data.message && data.message.hasOwnProperty('extendedTextMessage') &&
                 data.message.extendedTextMessage.hasOwnProperty('contextInfo') === true && 
                 data.message.extendedTextMessage.contextInfo.hasOwnProperty('quotedMessage')) { 
             this.reply_message = new ReplyMessage(this.client, data.message.extendedTextMessage.contextInfo); } else {
@@ -38,7 +38,7 @@ class Message extends Base {
                 this.reply_message = false;
             }*/
         
-        if (data.message != false && data.message.hasOwnProperty('extendedTextMessage') &&
+        if (data.message && data.message.hasOwnProperty('extendedTextMessage') &&
         data.message.extendedTextMessage.hasOwnProperty('contextInfo') === true && 
         data.message.extendedTextMessage.contextInfo.hasOwnProperty('mentionedJid')) {
             this.mention = data.message.extendedTextMessage.contextInfo.mentionedJid;
