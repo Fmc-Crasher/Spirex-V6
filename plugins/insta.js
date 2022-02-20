@@ -11,15 +11,15 @@ const raganork = require('raganork-bot');
 const Config = require('../config');
 const s = require('../config');
 var v = s.CHANNEL
-var need = "*ɴᴇᴇᴅ ɪɴsᴛᴀɢʀᴀᴍ ʟɪɴᴋ*";
-var downloading = "*⇓ ɪɴѕᴛᴀ ᴠɪᴅᴇᴏ* 🌝";
-var need_acc = "*ɴᴇᴇ ᴀɴ ɪɴsᴛᴀɢʀᴀᴍ ᴜsᴇʀɴᴀᴍᴇ*";
-var fail = "*ᴅᴏᴡɴʟᴏᴀᴅ ғᴀɪʟᴇᴅ! ᴄʜᴇᴄᴋ ʏᴏᴜʀ ʟɪɴᴋ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ*";
-var need_acc_s = "_ɴᴇᴇᴅ ᴀɴ ɪɴsᴛᴀɢʀᴀᴍ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʟɪɴᴋ";
+var need = "*_Need instagram link!_*";
+var downloading = "_Downloading_";
+var need_acc = "*_Need an instagram username!_*";
+var fail = "*_Download failed! Check your link and try again_*";
+var need_acc_s = "_Need an instagram username or link!_";
 let sourav = setting.WORKTYPE == 'public' ? false : true
 skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
 var q = !msg.reply_message.message ? query[1] : msg.reply_message.message
-if (!q)  return await msg.client.sendMessage(msg.jid, 'ᴜɴᴀʙʟᴇ ᴛᴏ ʀᴇᴀᴅ ʟɪɴᴋ !', MessageType.text, {quoted: msg.data});
+if (!q)  return await msg.client.sendMessage(msg.jid, '_Unable to read link from message!_', MessageType.text, {quoted: msg.data});
 if (q && !q.includes('instagram.com')) return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
 var getid = /(?:https?:\/\/)?(?:www\.)?(?:instagram\.com(?:\/.+?)?\/(p|reel|tv)\/)([\w-]+)(?:\/)?(\?.*)?$/
 var url = getid.exec(q)
@@ -45,7 +45,7 @@ if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.ji
 skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
     if (query[1] === '') return await msg.client.sendMessage(msg.jid, need_acc, MessageType.text, {quoted: msg.data});
     var res = await raganork.query.getStalk(query[1])
-    if (res === "false") return await msg.client.sendMessage(msg.jid, "Username invalid!", MessageType.text, {quoted: msg.data})
+    if (res === "false") return await msg.client.sendMessage(msg.jid, "_Username invalid!_", MessageType.text, {quoted: msg.data})
     var buffer = await raganork.query.skbuffer(res.hd_profile_pic_url_info.url)
     await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '_*Name:*_ ' + `${res.fullname}` + '\n _*Bio:*_ ' + `${res.biography}`+ '\n _*Private account:*_ ' + `${res.is_private} ` + '\n _*Followers:*_ ' + `${res.followers}` + '\n _*Following:*_ ' + `${res.following}` + '\n _*Posts:*_ ' + `${res.post_count}` + '\n _*Verified:*_ ' + `${res.is_verified} ` + '\n _*IGTV videos:*_ ' + `${res.total_igtv_videos}`, quoted: msg.data});
     }));
@@ -53,7 +53,7 @@ skl.addCommand({ pattern: 'story ?(.*)', fromMe: sourav,dontAddCommandList: true
 if (query[1] === '') return await msg.client.sendMessage(msg.jid, need_acc_s, MessageType.text, {quoted: msg.data});
 var user = query[1];
 var res = await raganork.query.getStory(user,v)
-if (res === "false") return await msg.client.sendMessage(msg.jid, "Story not found!", MessageType.text, {quoted: msg.data})
+if (res === "false") return await msg.client.sendMessage(msg.jid, "_Story not found!_", MessageType.text, {quoted: msg.data})
 var url = ''
 res.result.stories.map((result) => {
 url += result.url + ','});
