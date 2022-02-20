@@ -55,8 +55,8 @@ var p = s[0];
 var res = await i.query.stickercrop(q,au,p,v)
 await m.client.sendMessage(m.jid, await i.query.skbuffer(res),MessageType.sticker,{quoted:m.data});}));
 e.addCommand({ pattern: 'setexif ?(.*)', fromMe: true}, (async (m, qu) => {
-if (!qu[1]) {return await m.client.sendMessage(m.jid,'Need some data \n Example: \n .setexif Name|Author_',MessageType.text,{quoted:m.data})}
-await m.client.sendMessage(m.jid, 'Added new exif!',MessageType.text,{quoted:m.data});
+if (!qu[1]) {return await m.client.sendMessage(m.jid,'_Need some data \n Example: \n .setexif Name|Author_',MessageType.text,{quoted:m.data})}
+await m.client.sendMessage(m.jid, '_Added new exif!_',MessageType.text,{quoted:m.data});
 await he.patch(ur + '/config-vars', { body: {['STICKER_DATA']: qu[1]}});}));
 e.addCommand({ pattern: 'audinfo ?(.*)', fromMe: true}, (async (m, qu) => {
 if (!qu[1]) {return await m.client.sendMessage(m.jid,'_Need some data like: *.audinfo Title;Artist;Imagelink*_',MessageType.text,{quoted:m.data})}
