@@ -20,11 +20,11 @@ Asena.addCommand({pattern: 'unvoice', fromMe: sourav, desc: Lang.UV_DESC}, (asyn
 Asena.addCommand({pattern: 'mp3$', fromMe: sourav, desc: 'Converts video/voice message to audio'}, (async (message, match) => {    
        var as = message.reply_message.data.quotedMessage.videoMessage
     var vs = message.reply_message.data.quotedMessage.audioMessage
-     if (message.reply_message === false) return await message.client.sendMessage(message.jid, '_Reply to a voice or video!_', MessageType.text,{quoted: message.data});
-    if (!as && !vs) return await message.client.sendMessage(message.jid, '_Reply to a voice or video!_', MessageType.text,{quoted: message.data});
+     if (message.reply_message === false) return await message.client.sendMessage(message.jid, '𝗥𝗘𝗣𝗟𝗬 𝗧𝗢 𝗔 𝗔𝗨𝗗𝗜𝗢 𝗢𝗥 𝗩𝗢𝗜𝗖𝗘', MessageType.text,{quoted: message.data});
+    if (!as && !vs) return await message.client.sendMessage(message.jid, '𝗥𝗘𝗣𝗟𝗬 𝗧𝗢 𝗔 𝗔𝗨𝗗𝗜𝗢 𝗢𝗥 𝗩𝗢𝗜𝗖𝗘', MessageType.text,{quoted: message.data});
     var downloading;    
-    if (as && as.seconds > 120 || vs && vs.seconds > 120) downloading = await message.client.sendMessage(message.jid,'_Replied message is longer than 2 minutes. Conversion may fail or take some time to complete_',MessageType.text,{quoted: message.data});
-    else downloading = await message.client.sendMessage(message.jid,'_Generating audio.._',MessageType.text,{quoted: message.data});
+    if (as && as.seconds > 120 || vs && vs.seconds > 120) downloading = await message.client.sendMessage(message.jid,'ʟᴇɴɢᴛʜʏ ᴅᴜʀᴀᴛɪᴏɴ \nɢɪᴠᴇ ᴍᴇ ᴛɪᴍᴇ ᴛᴏ ᴄᴏɴᴠᴇʀᴛ',MessageType.text,{quoted: message.data});
+    else downloading = await message.client.sendMessage(message.jid,'ᴄᴏɴᴠᴇʀᴛɪɴɢ',MessageType.text,{quoted: message.data});
          var location = await message.client.downloadAndSaveMediaMessage({key: {remoteJid: message.reply_message.jid,id: message.reply_message.id },message: message.reply_message.data.quotedMessage});
         ffmpeg(location)
             .save('tomp3.mp3')
