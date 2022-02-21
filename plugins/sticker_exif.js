@@ -10,7 +10,7 @@ let ffmpeg = require('fluent-ffmpeg');
 const h = require('heroku-client');
 const he = new h({token: w.HEROKU.API_KEY});
 let ur = '/apps/' + w.HEROKU.APP_NAME;
-e.addCommand({pattern: 'take ?(.*)', fromMe: a, desc:'Changes sticker/audio pack & author name. Title, artist, thumbnail etc.'}, (async (m, match) => { 
+e.addCommand({pattern: 'toook ?(.*)', fromMe: a, desc:'Changes sticker/audio pack & author name. Title, artist, thumbnail etc.'}, (async (m, match) => { 
 if (!m.reply_message.data.quotedMessage) return await m.sendMessage('_Reply to an audio or a sticker_')
 var audiomsg = m.reply_message.data.quotedMessage.audioMessage;
 var stickermsg = m.reply_message.data.quotedMessage.stickerMessage;
