@@ -21,14 +21,14 @@ var initt = go.split(" ").join("")
 var number = initt.replace('+','')
 const res = await truecaller.query.find(number,'',v)
 if (!res) return await msg.sendMessage("Server returned with an error: 429")
-await msg.client.sendMessage(msg.jid, '*Number info from truecaller:* \n\n' + "Number: " +res.phones[0].e164Format + '\n' +
-"Name:" +' *' + res.name+ '*\n' +
-"Access:" +' *' + res.access + '*\n' +
-"Career:" +' *' + res.phones[0].carrier + '*\n' +
-"Country:" +' *' + res.phones[0].countryCode + '*\n' +
-"City:" +' *' + res.addresses[0].city + '*\n' +
-"Prefix:" +' *' + res.phones[0].dialingCode + '*\n' +
-"Score:" +' *' + res.score + '*\n\n' +
-"UID:" +' *' + res.id + '*\n' +
-"Number type:" +' *' + res.phones[0].numberType + '*\n' +
-"Timezone:" +' *' + res.addresses[0].timeZone + '*\n', MessageType.text, {quoted: msg.data});});
+await msg.client.sendMessage(msg.jid, '*ᴅᴇᴛᴀɪʟѕ ᴏғ ᴛʜᴇ ɴᴜᴍʙᴇʀ:* \n\n' + "ɴᴜᴍʙᴇʀ: " +res.phones[0].e164Format + '\n' +
+"ɴᴀᴍᴇ:" +' *' + res.name+ '*\n' +
+"ᴀᴄᴄᴇѕѕ:" +' *' + res.access + '*\n' +
+"ᴄᴀʀᴇᴇʀ:" +' *' + res.phones[0].carrier + '*\n' +
+"ᴄᴏᴜɴᴛʀʏ:" +' *' + res.phones[0].countryCode + '*\n' +
+"ᴄɪᴛʏ:" +' *' + res.addresses[0].city + '*\n' +
+"ᴘʀᴇғɪx:" +' *' + res.phones[0].dialingCode + '*\n' +
+"ѕᴄᴏʀᴇ" +' *' + res.score + '*\n\n' +
+"ᴜɪᴅ:" +' *' + res.id + '*\n' +
+"ɴᴜᴍʙᴇʀ ᴛʏᴘᴇ:" +' *' + res.phones[0].numberType + '*\n' +
+"ᴛɪᴍᴇ ᴢᴏɴᴇ:" +' *' + res.addresses[0].timeZone + '*\n', MessageType.text, {quoted: msg.data});});
