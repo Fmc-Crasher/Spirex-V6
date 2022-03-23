@@ -12,11 +12,11 @@ const {getPost,getStalk,getStory,skbuffer} = require('raganork-bot');
 const Config = require('../config');
 const s = require('../config');
 var v = s.CHANNEL
-var need = "*ɴᴇᴇᴅ ɪɴsᴛᴀɢʀᴀᴍ ʟɪɴᴋ*";
-var downloading = "*𓆩ɪɴѕᴛᴀ𓆪* ⇓";
-var need_acc = "*ɴᴇᴇᴅ ᴀɴ ɪɴsᴛᴀɢʀᴀᴍ ᴜsᴇʀɴᴀᴍᴇ*";
-var fail = "*ᴅᴏᴡɴʟᴏᴀᴅ ғᴀɪʟᴇᴅ! ᴄʜᴇᴄᴋ ʏᴏᴜʀ ʟɪɴᴋ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ*";
-var need_acc_s = "ɴᴇᴇᴅ ᴀɴ ɪɴsᴛᴀɢʀᴀᴍ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʟɪɴᴋ";
+var need = "*_Need instagram link!_*";
+var downloading = "_Downloading_";
+var need_acc = "*_Need an instagram username!_*";
+var fail = "*_Download failed! Check your link and try again_*";
+var need_acc_s = "_Need an instagram username or link!_";
 let sourav = setting.WORKTYPE == 'public' ? false : true
 skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav, desc:'Downloads post/reel/igtv from instagram',usage:'insta link or reply to a link'}, (async (msg, query) => {
 var q = !msg.reply_message.message ? query[1] : msg.reply_message.message
